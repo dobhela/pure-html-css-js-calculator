@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/fork-corner/dist/fork-corner.min.css">
+    <script src="./node_modules/fork-corner/dist/fork-corner.min.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <a href="https://github.com/double-sucks" target="_blank" id="fork-corner" class="fork-corner fc-pos-tl fc-animate-grow fc-theme-github"></a>
+    <div class="container">
+        <div class="head-container">
+            <h1 class="header">Project 3</h1>
+            <h2 class="subheader">Calculator</h2>
+        </div>
+        <form class="calculator" name="calc">
+            <input type="text" readonly class="value" name="txt"/>
+            <span class="btn clear" onclick="clr()">c</span>
+            <span class="btn" onclick="addDigit(`/`)">/</span>
+            <span class="btn" onclick="addDigit(`*`)">*</span>
+            <span class="btn" onclick="addDigit(`7`)">7</span>
+            <span class="btn" onclick="addDigit(`8`)">8</span>
+            <span class="btn" onclick="addDigit(`9`)">9</span>
+            <span class="btn" onclick="addDigit(`-`)">-</span>
+            <span class="btn" onclick="addDigit(`4`)">4</span>
+            <span class="btn" onclick="addDigit(`5`)">5</span>
+            <span class="btn" onclick="addDigit(`6`)">6</span>
+            <span class="btn plus" onclick="addDigit(`+`)">+</span>
+            <span class="btn" onclick="addDigit(`1`)">1</span>
+            <span class="btn" onclick="addDigit(`2`)">2</span>
+            <span class="btn" onclick="addDigit(`3`)">3</span>
+            <span class="btn" onclick="addDigit(`0`)">0</span>
+            <span class="btn" onclick="addDigit(`3`)">3</span>
+            <span class="btn" onclick="addDigit(`00`)">00</span>
+            <span class="btn result" onclick="result()">=</span>
+        </form>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

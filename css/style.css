@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #1c1b24;
+    --calc-background-color: #524f6481;
+    --text-color: #ffffff;
+    --hover-color: rgba(0, 255, 136, 0.2);
+    --active-color: rgb(0, 255, 136);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.head-container {
+    display: grid;
+    margin: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-container .header {
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 3vw;
+    text-shadow:
+						0 1px 0 #a8a8a8,
+						0 2px 0 #a8a8a8,
+						0 3px 0 #a8a8a8,
+						0 4px 0 #a8a8a8,
+						0 12px 5px rgba(0, 0, 0, 0.1);
+}
+
+.head-container .subheader {
+    margin: 0;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
+
+.calculator {
+    display: grid;
+    padding: 4vh 2vw 4vh 2vw;
+    background-color: var(--calc-background-color);
+    box-shadow: 5px 3px 30px black;
+}
+
+.calculator .value {
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    grid-column: span 4;
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 1px rgba(255, 255, 255, 0.25) solid;
+    height: 5vh;
+    width: 280px;
+    margin: 20px 0 20px 0;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 2.25rem;
+}
+
+.container .calculator .btn {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    vertical-align: center;
+    line-height: 70px;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 1px rgba(255, 255, 255, 0.25) solid;
+    margin: 2px;
+    display: grid;
+    height: 70px;
+    width: 70px;
+    transition: .5s;
+}
+
+.container .calculator .btn:hover {
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--hover-color);
+}
+
+.container .calculator .btn:active {
+    transition: none;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--active-color);
+}
+
+.container .calculator .clear {
+    grid-column: span 2;
+    width: 145px;
+}
+
+.container .calculator .plus {
+    grid-row: span 2;
+    height: 145px;
+    line-height: 145px;
+}
