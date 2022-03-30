@@ -16,5 +16,15 @@ const result = () => {
         output.value = result
     } catch(err) {
         console.warn("Invalid input")
+        errAnim(output)
     }
 }
+
+//! if ur learning ignore past this line
+
+const errAnim = (element) => {
+    element.classList.add('animate__animated', 'animate__headShake');
+    element.addEventListener('animationend', () => {
+        element.classList.remove('animate__animated', 'animate__headShake')
+    });
+} 
