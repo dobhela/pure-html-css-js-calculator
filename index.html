@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./node_modules/fork-corner/dist/fork-corner.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <script src="./node_modules/fork-corner/dist/fork-corner.min.js" defer></script>
     <title>Calculator</title>
 </head>
@@ -17,7 +18,7 @@
             <h2 class="subheader">Calculator</h2>
         </div>
         <form class="calculator" name="calc">
-            <input type="text" readonly class="value" name="txt"/>
+            <input type="text" readonly class="value errAnim" name="txt"/>
             <span class="btn clear" onclick="clr()">c</span>
             <span class="btn" onclick="addDigit(`/`)">/</span>
             <span class="btn" onclick="addDigit(`*`)">*</span>
